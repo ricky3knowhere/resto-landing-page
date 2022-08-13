@@ -1,0 +1,183 @@
+// VARIABLES
+$light-color:#fafafa 
+$secondary-color:#FDC886 
+$ternary-color:#5A4FCF 
+$text-color:#232631
+$text-secondary-color:#858585
+$text-ternary-color:#656565
+
+
+// UTILS
+@font-face
+  font-family: poppinsRegular
+  src: url(../src/fonts/Poppins-Regular.otf)
+
+*
+  margin: 0
+  padding: 0
+
+body 
+  font-family: poppinsRegular
+  background: $light-color
+
+// NAVBAR
+.navbar
+  margin-top: 30px
+  padding: 0
+  background: $light-color !important
+  .container
+    padding: 0
+    margin: 0 30px 0
+  .navbar-nav
+    .nav-link
+      color: $text-color
+      padding: 0 30px 0 0
+  .search-icon
+    background: white
+    margin: auto 0
+    padding: 16px 0 16px 28px
+    height: 100%
+    display: block
+    border-top-left-radius: 12px
+    border-bottom-left-radius: 12px
+  .form-control
+    color: $text-secondary-color
+    border: none
+    padding: 16px 0 16px 10px
+    width: 270px 
+    border-radius: 0
+    border-top-right-radius: 12px
+    border-bottom-right-radius: 12px
+    &::placeholder
+      color: $text-secondary-color
+      font-size: 16px
+    &:active
+      border: none !important
+  .btn
+    font-size: 16px
+    padding: 16px 28px
+    background: transparentize($ternary-color, 0.9)    
+    color: $ternary-color
+    font-weight: 400
+    border-radius: 12px
+
+
+// HERO SECTION
+#hero
+  position: relative
+  .row
+    height: 20em
+    margin-top: 60px
+    .col-md-10 img, .col-md-2 img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      border-radius: 24px 
+    .col-md-2 
+      margin-left: 16px
+      overflow: hidden
+      width: 150px
+      img
+        border-radius: 0 
+        border-top-left-radius: 24px 
+        border-bottom-left-radius: 24px 
+        object-position: left
+
+  .card
+    position: absolute
+    border: none
+    border-radius: 24px
+    padding: 24px
+    padding-right: 140px
+    transform: translateY(-50%)
+    width: 390px
+    height: 297px  
+    .rate
+      display: inline-flex
+      align-items: center
+      font-weight: bold
+      color: #FFB800
+      font-size: 18px
+      svg
+        padding-right: 3px
+      .count
+        padding-left: 5px
+        font-weight: normal
+        color: $text-ternary-color
+    .title
+      font-size: 22px
+      font-weight: bold
+      color: $text-color
+      margin: 0
+      padding-top: 5.5px
+    .price
+      padding: 4px 0 4px
+      font-size: 18px
+      font-weight: bold
+      color: $text-ternary-color
+    .location
+      display: inline-flex
+      align-items: center
+      color: $text-ternary-color
+      svg
+        padding-right: 6px
+      
+    .btn
+      background: $secondary-color
+      padding: 16px 28px
+      margin-top: 34px
+      margin-bottom: 12px
+      border-radius: 12px
+      font-weight: bold
+      color: $text-color
+    .cost
+      color: $text-ternary-color
+
+// BENEFIT SECTION
+#benefit
+  margin-top: 26em
+  margin-bottom: 120px
+  .container
+    padding: 0
+    // margin:  1em
+  .section-title
+    text-align: center
+    margin-bottom: 41px
+    h6
+      font-weight: bold
+      color: $ternary-color
+      text-transform: uppercase
+      margin-bottom: 6px
+    h3
+      font-weight: bold
+      color: $text-color
+      margin-bottom: 41px
+  .row
+    .card
+      margin: auto
+      width: 315px
+      border: none
+      border-radius: 24px
+      overflow: hidden
+      padding-bottom: 0
+      padding-top: 24px
+      text-align: center
+      .title
+        font-weight: bold
+        font-size: 18px
+        color: $text-color
+        padding-top: 24px
+        padding-bottom: 12px
+      .desc
+        color: $text-ternary-color
+        padding: 24px
+        padding-bottom: 54px
+      .view
+        padding: 24px
+        color: $text-color
+        font-weight: bold
+        text-decoration: none
+        &:hover
+          // opacity: .8
+          background: $secondary-color
+          transition: all .3s ease-in-out

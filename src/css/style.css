@@ -1,0 +1,200 @@
+@font-face {
+  font-family: poppinsRegular;
+  src: url(../src/fonts/Poppins-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: poppinsRegular;
+  background: #fafafa;
+}
+
+.navbar {
+  margin-top: 30px;
+  padding: 0;
+  background: #fafafa !important;
+}
+.navbar .container {
+  padding: 0;
+  margin: 0 30px 0;
+}
+.navbar .navbar-nav .nav-link {
+  color: #232631;
+  padding: 0 30px 0 0;
+}
+.navbar .search-icon {
+  background: white;
+  margin: auto 0;
+  padding: 16px 0 16px 28px;
+  height: 100%;
+  display: block;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.navbar .form-control {
+  color: #858585;
+  border: none;
+  padding: 16px 0 16px 10px;
+  width: 270px;
+  border-radius: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.navbar .form-control::placeholder {
+  color: #858585;
+  font-size: 16px;
+}
+.navbar .form-control:active {
+  border: none !important;
+}
+.navbar .btn {
+  font-size: 16px;
+  padding: 16px 28px;
+  background: rgba(90, 79, 207, 0.1);
+  color: #5A4FCF;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+#hero {
+  position: relative;
+}
+#hero .row {
+  height: 20em;
+  margin-top: 60px;
+}
+#hero .row .col-md-10 img, #hero .row .col-md-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+#hero .row .col-md-2 {
+  margin-left: 16px;
+  overflow: hidden;
+  width: 150px;
+}
+#hero .row .col-md-2 img {
+  border-radius: 0;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  object-position: left;
+}
+#hero .card {
+  position: absolute;
+  border: none;
+  border-radius: 24px;
+  padding: 24px;
+  padding-right: 140px;
+  transform: translateY(-50%);
+  width: 390px;
+  height: 297px;
+}
+#hero .card .rate {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  color: #FFB800;
+  font-size: 18px;
+}
+#hero .card .rate svg {
+  padding-right: 3px;
+}
+#hero .card .rate .count {
+  padding-left: 5px;
+  font-weight: normal;
+  color: #656565;
+}
+#hero .card .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #232631;
+  margin: 0;
+  padding-top: 5.5px;
+}
+#hero .card .price {
+  padding: 4px 0 4px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #656565;
+}
+#hero .card .location {
+  display: inline-flex;
+  align-items: center;
+  color: #656565;
+}
+#hero .card .location svg {
+  padding-right: 6px;
+}
+#hero .card .btn {
+  background: #FDC886;
+  padding: 16px 28px;
+  margin-top: 34px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #232631;
+}
+#hero .card .cost {
+  color: #656565;
+}
+
+#benefit {
+  margin-top: 26em;
+  margin-bottom: 120px;
+}
+#benefit .container {
+  padding: 0;
+}
+#benefit .section-title {
+  text-align: center;
+  margin-bottom: 41px;
+}
+#benefit .section-title h6 {
+  font-weight: bold;
+  color: #5A4FCF;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+#benefit .section-title h3 {
+  font-weight: bold;
+  color: #232631;
+  margin-bottom: 41px;
+}
+#benefit .row .card {
+  margin: auto;
+  width: 315px;
+  border: none;
+  border-radius: 24px;
+  overflow: hidden;
+  padding-bottom: 0;
+  padding-top: 24px;
+  text-align: center;
+}
+#benefit .row .card .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #232631;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+#benefit .row .card .desc {
+  color: #656565;
+  padding: 24px;
+  padding-bottom: 54px;
+}
+#benefit .row .card .view {
+  padding: 24px;
+  color: #232631;
+  font-weight: bold;
+  text-decoration: none;
+}
+#benefit .row .card .view:hover {
+  background: #FDC886;
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=style.css.map */
