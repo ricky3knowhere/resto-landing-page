@@ -32,6 +32,24 @@ body
     .nav-link
       color: $text-color
       padding: 0 30px 0 0
+      position: relative
+      &:hover::before
+        opacity: 1
+      &:active::before
+        opacity: 1
+      &::before
+        content: ''
+        display: block
+        width: 80%
+        height: 3px
+        position: absolute
+        transform: translateX(-5px)
+        background: $ternary-color
+        border-radius: 3px
+        bottom: -5px
+        opacity: 0
+        transition: all .2s ease-in-out
+
   .search-icon
     background: white
     margin: auto 0
@@ -162,6 +180,8 @@ body
       padding-bottom: 0
       padding-top: 24px
       text-align: center
+      &:hover .view
+        background: $secondary-color
       .title
         font-weight: bold
         font-size: 18px
@@ -177,10 +197,8 @@ body
         color: $text-color
         font-weight: bold
         text-decoration: none
-        &:hover
-          // opacity: .8
-          background: $secondary-color
-          transition: all .3s ease-in-out
+        transition: all .2s ease-in-out
+
 
 
 // FEATURED SECTION
@@ -292,9 +310,10 @@ body
           margin-top: -25%
           transform: translateY(36%)
 
-// FEATURED SECTION
+// LOCATION SECTION
 #location
   display: grid
+  margin-bottom: 120px
   .container
     margin-bottom: 120px
   .section-title
@@ -331,7 +350,7 @@ body
           object-fit: cover
 
       .card
-        display: block
+        display: grid
         position: absolute
         border: none
         border-radius: 24px
@@ -371,10 +390,12 @@ body
           border-radius: 12px
           font-weight: bold
           color: $text-color
-          position: relative
-          margin-left: 292px
-          margin-top: -25%
-          transform: translateY(36%)
+          position: absolute
+          right: 24px
+          align-self: center
+          // margin-left: 292px
+          // margin-top: -27.5%
+          // transform: translateY(10%)
   
   .title-row
     position: relative
@@ -399,3 +420,119 @@ body
     font-weight: bold
     text-decoration: none
     justify-self: center
+
+// CHEFS SECTION
+#chefs
+  margin-bottom: 123px
+  .details
+    display: grid
+    position: relative
+    img
+      text-align: center
+      position: relative
+      justify-self: center
+      width: 84.5%
+      height: 100%
+      border-radius: 24px
+    .card1
+      padding: 30px 46px
+      text-align: center
+      border-radius: 24px
+      background: #fff
+      position: absolute
+      top: 40px
+      right: 20px
+      h6
+        font-weight: bold
+        margin-top: 12px
+        font-size: 18px
+        color: $text-color
+      span
+        color: $text-secondary-color
+
+    .card2
+      bottom: 17em
+      position: absolute
+      background: #fff
+      padding: 24px
+      width: 320px
+      display: flex
+      border-radius: 12px
+      .img-wrapper
+        width: fit-content
+        display: inline-block
+        padding-right: 12px
+        align-self: center
+      .text-wrapper
+        display: inline-block
+        align-self: center
+        width: fit-content
+        padding: 0
+      img
+        border-radius: 10px
+        height: 132px
+        width: 100px
+      span
+        color: $text-ternary-color
+        padding-bottom: 8px
+        margin-bottom: 4px
+      h6
+        font-size: 18px
+        font-weight: bold
+        margin-bottom: 24px
+        position: relative
+      a
+        color: $secondary-color
+        text-decoration: none
+        font-weight: bold
+  .chefs-list
+    .section-title
+      margin-bottom: 32px
+      h6
+        font-weight: bold
+        color: $ternary-color
+        text-transform: uppercase
+        margin-bottom: 6px
+      h3
+        font-weight: bold
+          color: $text-color
+          margin-bottom: 20px
+    .card
+      border: none
+      border-radius: 24px
+      padding: 24px
+      display: grid
+      position: relative
+      margin-bottom: 20px
+      background: $light-color
+      transition: all .3s ease-in-out
+      &:hover
+        background: #fff
+      &:hover .view
+        opacity: 1
+      .food
+        text-transform: uppercase
+        color: $text-ternary-color
+      h6
+        font-size: 22px
+        font-weight: bold
+      .location
+        color: $text-ternary-color
+      .view
+        color: $secondary-color
+        text-decoration: none
+        position: absolute
+        right: 24px
+        align-self: center
+        opacity: 0
+        transition: all .3s ease-in-out
+
+    & > .view
+      padding: 16px 28px
+      background: $secondary-color
+      color: $text-color
+      border-radius: 12px
+      font-weight: bold
+      text-decoration: none
+      margin-top: 62px
+      position: absolute

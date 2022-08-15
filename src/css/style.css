@@ -24,6 +24,26 @@ body {
 .navbar .navbar-nav .nav-link {
   color: #232631;
   padding: 0 30px 0 0;
+  position: relative;
+}
+.navbar .navbar-nav .nav-link:hover::before {
+  opacity: 1;
+}
+.navbar .navbar-nav .nav-link:active::before {
+  opacity: 1;
+}
+.navbar .navbar-nav .nav-link::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  position: absolute;
+  transform: translateX(-5px);
+  background: #5A4FCF;
+  border-radius: 3px;
+  bottom: -5px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 .navbar .search-icon {
   background: white;
@@ -174,6 +194,9 @@ body {
   padding-top: 24px;
   text-align: center;
 }
+#benefit .row .card:hover .view {
+  background: #FDC886;
+}
 #benefit .row .card .title {
   font-weight: bold;
   font-size: 18px;
@@ -191,10 +214,7 @@ body {
   color: #232631;
   font-weight: bold;
   text-decoration: none;
-}
-#benefit .row .card .view:hover {
-  background: #FDC886;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #featured {
@@ -313,6 +333,7 @@ body {
 
 #location {
   display: grid;
+  margin-bottom: 120px;
 }
 #location .container {
   margin-bottom: 120px;
@@ -353,7 +374,7 @@ body {
   object-fit: cover;
 }
 #location .row .col-md-4 .card {
-  display: block;
+  display: grid;
   position: absolute;
   border: none;
   border-radius: 24px;
@@ -394,10 +415,9 @@ body {
   border-radius: 12px;
   font-weight: bold;
   color: #232631;
-  position: relative;
-  margin-left: 292px;
-  margin-top: -25%;
-  transform: translateY(36%);
+  position: absolute;
+  right: 24px;
+  align-self: center;
 }
 #location .title-row {
   position: relative;
@@ -424,6 +444,142 @@ body {
   font-weight: bold;
   text-decoration: none;
   justify-self: center;
+}
+
+#chefs {
+  margin-bottom: 123px;
+}
+#chefs .details {
+  display: grid;
+  position: relative;
+}
+#chefs .details img {
+  text-align: center;
+  position: relative;
+  justify-self: center;
+  width: 84.5%;
+  height: 100%;
+  border-radius: 24px;
+}
+#chefs .details .card1 {
+  padding: 30px 46px;
+  text-align: center;
+  border-radius: 24px;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+#chefs .details .card1 h6 {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #232631;
+}
+#chefs .details .card1 span {
+  color: #858585;
+}
+#chefs .details .card2 {
+  bottom: 17em;
+  position: absolute;
+  background: #fff;
+  padding: 24px;
+  width: 320px;
+  display: flex;
+  border-radius: 12px;
+}
+#chefs .details .card2 .img-wrapper {
+  width: fit-content;
+  display: inline-block;
+  padding-right: 12px;
+  align-self: center;
+}
+#chefs .details .card2 .text-wrapper {
+  display: inline-block;
+  align-self: center;
+  width: fit-content;
+  padding: 0;
+}
+#chefs .details .card2 img {
+  border-radius: 10px;
+  height: 132px;
+  width: 100px;
+}
+#chefs .details .card2 span {
+  color: #656565;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+#chefs .details .card2 h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  position: relative;
+}
+#chefs .details .card2 a {
+  color: #FDC886;
+  text-decoration: none;
+  font-weight: bold;
+}
+#chefs .chefs-list .section-title {
+  margin-bottom: 32px;
+}
+#chefs .chefs-list .section-title h6 {
+  font-weight: bold;
+  color: #5A4FCF;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+#chefs .chefs-list .section-title h3 {
+  font-weight: bold;
+  font-weight-color: #232631;
+  font-weight-margin-bottom: 20px;
+}
+#chefs .chefs-list .card {
+  border: none;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  position: relative;
+  margin-bottom: 20px;
+  background: #fafafa;
+  transition: all 0.3s ease-in-out;
+}
+#chefs .chefs-list .card:hover {
+  background: #fff;
+}
+#chefs .chefs-list .card:hover .view {
+  opacity: 1;
+}
+#chefs .chefs-list .card .food {
+  text-transform: uppercase;
+  color: #656565;
+}
+#chefs .chefs-list .card h6 {
+  font-size: 22px;
+  font-weight: bold;
+}
+#chefs .chefs-list .card .location {
+  color: #656565;
+}
+#chefs .chefs-list .card .view {
+  color: #FDC886;
+  text-decoration: none;
+  position: absolute;
+  right: 24px;
+  align-self: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#chefs .chefs-list > .view {
+  padding: 16px 28px;
+  background: #FDC886;
+  color: #232631;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 62px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
