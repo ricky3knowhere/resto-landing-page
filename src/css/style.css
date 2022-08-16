@@ -10,6 +10,7 @@
 body {
   font-family: poppinsRegular;
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -96,6 +97,7 @@ body {
   margin-left: 16px;
   overflow: hidden;
   width: 150px;
+  padding-right: 0;
 }
 #hero .row .col-md-2 img {
   border-radius: 0;

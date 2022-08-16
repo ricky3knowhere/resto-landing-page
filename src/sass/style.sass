@@ -19,6 +19,7 @@ $text-ternary-color:#656565
 body 
   font-family: poppinsRegular
   background: $light-color
+  overflow-x: hidden
 
 // NAVBAR
 .navbar
@@ -95,6 +96,7 @@ body
       margin-left: 16px
       overflow: hidden
       width: 150px
+      padding-right: 0
       img
         border-radius: 0 
         border-top-left-radius: 24px 
@@ -157,7 +159,6 @@ body
   margin-bottom: 120px
   .container
     padding: 0
-    // margin:  1em
   .section-title
     text-align: center
     margin-bottom: 41px
@@ -234,7 +235,6 @@ body
       display: grid
       position: relative
       .img-wrapper
-        // background: #000
         width: 100%
         height: 100%
         overflow: hidden
@@ -245,7 +245,6 @@ body
           object-fit: cover
     
       &:last-child
-        // background: green
         position: relative
         padding: 0
         .img-wrapper
@@ -253,12 +252,10 @@ body
           width: 50%
           padding-left: 15px
           img
-            // transform: scale(.3)
             border-radius: 24px
             margin-top: 0
             height: 100%
             width: 100%
-            // object-position: 5px
           &:last-child
             right: 0
 
@@ -268,17 +265,13 @@ body
         border: none
         border-radius: 24px
         padding: 24px
-        // padding-right: 68px
         bottom: 24px
         justify-self: center
-        // width: 260px
-        // height: 83px
         .rate
           display: inline-flex
           align-items: center
           font-weight: bold
           color: #FFB800
-          // font-size: 18px
           svg
             padding-right: 3px
           .count
@@ -289,15 +282,12 @@ body
           font-size: 18px
           font-weight: bold
           color: $text-color
-          // margin: 0
           padding: 4px 0
           margin: 0
         .location
           position: absolute
           align-items: center
           color: $text-ternary-color
-          svg
-            // padding-right: 6px
           
         .btn
           background: $secondary-color
@@ -318,7 +308,6 @@ body
     margin-bottom: 120px
   .section-title
     margin-bottom: 34px
-    // width: 367px
     h6
       font-weight: bold
       color: $ternary-color
@@ -339,13 +328,9 @@ body
       &:last-child
         padding-right: 0
       .img-wrapper
-        // background: #000
-        // width: 100%
-        // height: 100%
         overflow: hidden
         border-radius: 24px 
         img
-          // margin-top: -10em
           width: 100%
           object-fit: cover
 
@@ -355,17 +340,14 @@ body
         border: none
         border-radius: 24px
         padding: 24px
-        // padding-right: 68px
         bottom: 33px
         justify-self: center
         width: 378px
-        // height: 83px
         .rate
           display: inline-flex
           align-items: center
           font-weight: bold
           color: #FFB800
-          // font-size: 18px
           svg
             padding-right: 3px
           .count
@@ -376,7 +358,6 @@ body
           font-size: 18px
           font-weight: bold
           color: $text-color
-          // margin: 0
           padding: 4px 0
           margin: 0
         .price
@@ -393,9 +374,6 @@ body
           position: absolute
           right: 24px
           align-self: center
-          // margin-left: 292px
-          // margin-top: -27.5%
-          // transform: translateY(10%)
   
   .title-row
     position: relative
